@@ -1,0 +1,50 @@
+.mega-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    background: #171717;
+    padding: 10px 10px;
+    z-index: 999;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    border: 1px solid #333;
+    border-radius: 8px;
+    gap: 10px;
+}
+
+.mega-column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 220px;
+}
+
+.mega-column h4 {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.mega-column button {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    gap: 10px;
+    border: none;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.mega-column button:hover {
+    background-color: lighten($color: rgb(34, 34, 34), $amount: 5%);
+}
+
+// Fix
+.mega-wrapper {
+    position: relative;
+}

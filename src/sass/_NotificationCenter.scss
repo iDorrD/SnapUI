@@ -1,0 +1,145 @@
+.notification-wrapper {
+    position: relative;
+}
+
+.notification-button {
+    background: #1e1e1e;
+    border: 1px solid #333;
+    padding: 6px 10px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.notification-popup {
+    position: absolute;
+    right: 0;
+    top: 42px;
+    background: #121212;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    overflow: hidden;
+}
+
+.notification-header {
+    padding: 12px 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #333;
+    background: #1a1a1a;
+}
+
+.notification-list {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-left: 0px !important;
+}
+
+.notification-item {
+    padding: 10px 16px;
+    font-size: 14px;
+    border-bottom: 1px solid #1e1e1e;
+    color: #ddd;
+}
+
+.notification-time {
+    font-size: 12px;
+    color: #777;
+    display: block;
+    margin-top: 4px;
+}
+
+.notification-footer {
+    padding: 10px;
+    text-align: center;
+}
+
+.view-all {
+    background: none;
+    color: #3b82f6;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.no-notifications {
+    padding: 16px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Types */
+.notification-item {
+    position: relative;
+    padding: 12px 16px 12px 20px;
+    display: flex;
+    gap: 12px;
+    font-size: 14px;
+    border-bottom: 1px solid #1e1e1e;
+    color: #ddd;
+    background-color: transparent;
+}
+
+.notification-content {
+    flex: 1;
+}
+
+.notification-indicator {
+    width: 6px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+/* Colores por tipo */
+.tipo-created {
+    background-color: #707070;
+    /* Azul SnapUI */
+}
+
+.tipo-aprobado {
+    background-color: #22c55e;
+    /* Verde */
+}
+
+.tipo-rechazado {
+    background-color: #ef4444;
+    /* Rojo */
+}
+
+.tipo-login {
+    background-color: #707070;
+    /* Azul-violeta suave */
+}
+
+/* Badge */
+.notification-button-wrapper {
+    position: relative;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-color: #ef4444;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 999px;
+    line-height: 1;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Readed */
+.notification-item.visto {
+    opacity: 1;
+    color: gray;
+}
+
+.notification-item.visto .notification-indicator {
+    background-color: #454545;
+}

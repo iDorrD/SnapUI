@@ -1,0 +1,38 @@
+.error-container {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f0f0f;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.error-code {
+    font-size: 120px;
+    font-weight: 900;
+    background: linear-gradient(90deg, #3b82f6, #00bfff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.error-message {
+    font-size: 18px;
+    color: #ccc;
+    margin-top: 16px;
+}
+
+.back-home {
+    margin-top: 24px;
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.back-home:hover {
+    text-decoration: underline;
+}

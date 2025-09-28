@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+// Imports
+@import "CardComponent.scss"; 
+@import "Auth.scss"; 
+@import "Componente.scss";
+@import "Soon.scss";
+@import "ComponenteModal.scss";
+@import "CreateModal.scss";
+@import "Dashboard.scss";
+@import "ErrorNotFound.scss";
+@import "Footer.scss";
+@import "Header.scss";
+@import "Home.scss";
+@import "LoginModal.scss";
+@import "NotificationCenter.scss";
+@import "Profile.scss";
+@import "Register.scss";
+@import "ReportModal.scss";
+@import "Settings.scss";
+@import "MegaDropdown.scss";
+@import "media-queries.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+p,
+span,
+a {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff !important;
+}
+
+body {
+  background-color: #101010;
+  font-family: "Inter", sans-serif !important;
+  color: #fff;
+}
+
+::selection {
+  background: #3b82f6;
+}
+
+/* Custom scroll */
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #161616;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #292929;
+  border-radius: 10px;
+  border: 2px solid #161616;
+}
+
+/* Barra de carga */
+/* Estilo para la barra de progreso */
+#nprogress .bar {
+  background: #3b82f6 !important;
+  height: 3px;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #3b82f6, 0 0 5px #00bfff;
+}
+
+.new {
+  background: #3b82f6 !important;
+  color: #fff !important;
+  padding: 5px 6px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  margin-left: 5px;
+  user-select: none;
+}
+
+.soon {
+  background: #484a4d !important;
+  color: #fff !important;
+  padding: 5px 6px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  margin-left: 5px;
+  user-select: none;
+}
+
+/* Quitar fondo blanco y personalizar toast */
+.go2072408551 {
+  background-color: #1e1e1e !important;
+  color: white !important;
+  box-shadow: none !important;
+  border: 1px solid #222 !important;
+}
+
+/* Alerts */
+.alert-warning {
+  background-color: #f59e0b11 !important;
+  color: #f59e0b !important;
+  border: 1px solid #f59e0b !important;
+}
+
+.alert-danger {
+  background-color: #ef444411 !important;
+  color: #ef4444 !important;
+  border: 1px solid #ef4444 !important;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+
+/* Fixes patch */
+.no-scroll {
+  overflow: hidden !important;
+  height: 100%;
+}
